@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Outlet } from 'react-router';
 import Navbar from "./components/Navbar";
-import "./Layout.css";
+import "./Layout.module.css";
 
 function Layout() {
   const [cart, setCart] = useState([]);
