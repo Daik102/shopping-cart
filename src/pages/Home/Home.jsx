@@ -9,7 +9,7 @@ function Home() {
       <Link to="/shop" className={styles.shopBtn} >
         Shop Now
       </Link>
-      <img src="https://picsum.photos/800/600" alt="Featured products banner" />
+      <img src="https://picsum.photos/600/600" alt="Featured products banner" />
     </div>
   );
 }
