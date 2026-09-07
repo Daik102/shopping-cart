@@ -51,7 +51,7 @@ function Layout() {
       <button onClick={() => removeFromCart(1)}>Remove</button>
       <Navbar cart={cart} />
       <main>
-        <Outlet />
+        <Outlet context={{ cart, addToCart, updateQuantity, removeFromCart }} />
       </main>
     </div>
   )
