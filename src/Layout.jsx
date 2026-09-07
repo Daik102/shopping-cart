@@ -41,14 +41,8 @@ function Layout() {
     );
   });
 
-  const a = {id: 1, title: "aaa", price: 10, image: "xxx"};
-  console.log(cart);
-
   return (
     <div>
-      <button className='btn' onClick={() => addToCart(a, 2)}>Add</button>
-      <button onClick={() => updateQuantity(1, 5)}>Update</button>
-      <button onClick={() => removeFromCart(1)}>Remove</button>
       <Navbar cart={cart} />
       <main>
         <Outlet context={{ cart, addToCart, updateQuantity, removeFromCart }} />

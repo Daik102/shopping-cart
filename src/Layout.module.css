@@ -3,8 +3,3 @@ button {
   padding: 0.4rem 0.8rem;
   cursor: pointer;
 }
-
-nav {
-  display: flex;
-  gap: 0.8rem; 
-}
