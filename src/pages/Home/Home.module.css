@@ -18,8 +18,8 @@
   padding: 0.6rem 1.2rem;
   font-size: 1.2rem;
   font-weight: 600;
-  color: var(--color-text);
-  background-color: lightgray;
+  color: var(--color-white-text);
+  background-color: var(--color-price);
   text-decoration: none;
   border-radius: 0.4rem;
 }
