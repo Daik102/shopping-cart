@@ -23,3 +23,7 @@
   text-decoration: none;
   border-radius: 0.4rem;
 }
+
+.shopBtn:hover {
+  background-color: var(--color-price-hover);
+}
