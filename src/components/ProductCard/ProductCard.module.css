@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 1.6rem;
   background-color: var(--color-item-background);
   border-radius: 0.8rem;
 }
@@ -28,11 +28,11 @@
 }
 
 .actionsContainer {
-  margin-top: auto;        /* Pushes the ENTIRE group to the bottom */
+  margin-top: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.8rem;             /* Fixed, exact spacing between select and button */
+  gap: 0.8rem;
   width: 100%;
 }
 
