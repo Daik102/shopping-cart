@@ -1,7 +1,8 @@
 nav {
   display: flex;
   justify-content: center;
-  padding: 1.2rem 0;
+  align-items: center;
+  height: 4rem;
   background-color: var(--color-primary);
 }
 
