@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Roboto;
+  src: url(./assets/Roboto-VariableFont_wdth\,wght.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: Damion-Regular;
+  src: url(./assets/Damion-Regular.woff2) format('woff2');
+}
+
 :root {
   --color-primary: #333;
   --color-background: #fff;
@@ -8,6 +18,8 @@
   --color-price-hover:#ee4500; 
   --color-item-background: #eee;
   --navbar-height: 4rem;
+  --Roboto: Roboto, Arial, Helvetica, sans-serif;
+  --Damion-Regular: Damion-Regular, Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -17,11 +29,12 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--Roboto);
   background-color: var(--color-background);
   color: var(--color-text);
 }
 
 button {
   border: none;
+  cursor: pointer;
 }
