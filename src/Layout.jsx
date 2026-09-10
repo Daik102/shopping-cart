@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { Outlet } from 'react-router';
-import "./Layout.module.css";
 import Navbar from './components/Navbar/Navbar'
 
 function Layout() {
