@@ -7,7 +7,7 @@ function Cart() {
   if (cart.length === 0) {
     return (
       <div className={styles.wrapper}>
-        <h1>Your cart is empty</h1>
+        <h1 className={styles.cartTitle}>Your cart is empty</h1>
         <Link to="/shop" className={styles.backToShoppingBtn}>
           Back to shopping
         </Link>
@@ -26,7 +26,7 @@ function Cart() {
 
   return (
     <div className={styles.wrapper}>
-      <h1>Your Cart</h1>
+      <h1 className={styles.cartTitle}>Your Cart</h1>
       <div className={styles.cartContainer}>
         <ul className={styles.cartItemGrid}>
           {cart.map((cartItem) => (
@@ -59,7 +59,7 @@ function Cart() {
           ))}
         </ul>
         <div className={styles.summaryContainer}>
-          <h2>Order Summary</h2>
+          <h2 className={styles.summaryTitle}>Order Summary</h2>
           <p className={styles.totalAmount}>
             Total ({totalItemCount} {totalItemCount > 1 ? 'items' : 'item'}): ${totalPrice}
           </p>
