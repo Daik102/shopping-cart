@@ -9,17 +9,27 @@
 }
 
 :root {
-  --color-primary: #333;
-  --color-background: #fff;
-  --color-text: #333;
-  --color-white-text: #fff;
+  /* Color Palette */
+  --color-dark-gray: #333;
+  --color-white: #fff;
+  --color-orange: orangered;
+  --color-orange-hover: #ee4500;
+  --color-light-gray: #eee;
+
+  /* Semantic Mapping */
+  --color-primary: var(--color-dark-gray);
+  --color-background: var(--color-white);
+  --color-text: var(--color-dark-gray);
+  --color-white-text: var(--color-white);
   --color-active: cyan;
-  --color-price: orangered;
-  --color-price-hover:#ee4500; 
-  --color-item-background: #eee;
+  --color-accent: var(--color-orange);
+  --color-accent-hover: var(--color-orange-hover);
+  --color-item-background: var(--color-light-gray);
   --navbar-height: 4rem;
-  --Roboto: Roboto, Arial, Helvetica, sans-serif;
-  --Damion-Regular: Damion-Regular, Arial, Helvetica, sans-serif;
+
+  /* Functional Typography */
+  --font-body: Roboto, Arial, Helvetica, sans-serif;
+  --font-heading: Damion-Regular, Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -29,7 +39,7 @@
 }
 
 body {
-  font-family: var(--Roboto);
+  font-family: var(--font-body);
   background-color: var(--color-background);
   color: var(--color-text);
 }
