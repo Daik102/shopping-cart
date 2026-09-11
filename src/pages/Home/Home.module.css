@@ -1,6 +1,7 @@
 .wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 1.2rem;
   height: calc(100vh - var(--navbar-height, 4rem));
@@ -8,13 +9,15 @@
 }
 
 .heroTitle {
-  font-size: 3.2rem;
-  font-family: var(--Damion-Regular);
+  text-align: center;
+  font-size: clamp(2.4rem, 6vw, 3.2rem);
+  font-family: var(--font-heading);
 }
 
 .heroSubTitle {
-  font-size: 1.6rem;
-  font-family: var(--Damion-Regular);
+  text-align: center;
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  font-family: var(--font-heading);
 }
 
 .shopBtn {
@@ -23,11 +26,29 @@
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--color-white-text);
-  background-color: var(--color-price);
+  background-color: var(--color-accent);
   text-decoration: none;
   border-radius: 0.4rem;
+
+  &:hover {
+    background-color: var(--color-accent-hover);
+  }
 }
 
-.shopBtn:hover {
-  background-color: var(--color-price-hover);
+.heroImage {
+  display: block;
+  width: 100%;
+  max-width: 37.5rem;
+  height: auto;
+  padding: 0 2rem;
+}
+
+/* Small Smartphones */
+@media (max-width: 22em) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+  .heroSubTitle {
+    font-size: 1.1rem;
+  }
 }
