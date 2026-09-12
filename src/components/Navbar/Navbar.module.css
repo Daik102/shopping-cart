@@ -25,7 +25,7 @@ nav {
   text-align: center;
   padding: 0.4rem 0.8rem;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--color-white-text);
   text-decoration: none;
 }
@@ -33,4 +33,18 @@ nav {
 .customActive {
   composes: navItem;
   color: var(--color-active);
+}
+
+.cartLinkContent {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.cartIcon {
+  display: block;
+}
+
+.badge {
+  font-weight: 700;
 }

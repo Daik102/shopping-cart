@@ -1,28 +1,37 @@
 import { NavLink } from "react-router";
+import { House, Store, ShoppingCart } from 'lucide-react';
 import styles from "./Navbar.module.css";
 
-function Navbar({ cart = 0 }) {
-  const totalItemCount = cart.reduce((total, item) => total += item.quantity, 0);
-
+function Navbar({ cartCount }) {
   return (
     <nav>
       <NavLink 
         to="/" end
         className={({ isActive }) => (isActive ? styles.customActive : styles.navItem)}
       >
-        Home
+        <span className={styles.cartLinkContent}>
+          <House className={styles.cartIcon} size={20} />
+          Home
+        </span>
       </NavLink>
       <NavLink 
         to="/shop"
         className={({ isActive }) => (isActive ? styles.customActive : styles.navItem)}
       >
-        Shop
+        <span className={styles.cartLinkContent}>
+          <Store className={styles.cartIcon} size={20} />
+          Shop
+        </span>
       </NavLink>
       <NavLink 
         to="/cart"
         className={({ isActive }) => (isActive ? styles.customActive : styles.navItem)}
       >
-        Cart {totalItemCount > 0 && <span>({totalItemCount})</span>}
+        <span className={styles.cartLinkContent}>
+          <ShoppingCart className={styles.cartIcon} size={20} />
+          Cart
+          {cartCount > 0 && <span className={styles.badge}>({cartCount})</span>}
+        </span>
       </NavLink>
     </nav>
   );
