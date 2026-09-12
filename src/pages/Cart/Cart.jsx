@@ -31,7 +31,7 @@ function Cart() {
 
   return (
     <div className={styles.wrapper}>
-      <h1 className={styles.cartTitle}>Your Cart</h1>
+      <h1 className={styles.cartTitle}>Shopping Cart</h1>
       <div className={styles.cartContainer}>
         <ul className={styles.cartItemGrid}>
           {cart.map((cartItem) => (
