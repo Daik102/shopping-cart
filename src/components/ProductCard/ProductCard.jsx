@@ -4,10 +4,6 @@ import styles from './ProductCard.module.css';
 function ProductCard({ product, addToCart }) {
   const [quantity, setQuantity] = useState(1);
 
-  const handleAddToCart = () => {
-    addToCart(product, Number(quantity));
-  };
-
   return (
     <li className={styles.product}>
       <img className={styles.productImage} src={product.image} alt={product.title} />
@@ -29,7 +25,7 @@ function ProductCard({ product, addToCart }) {
             ))}
           </select>
         </div>
-        <button className={styles.addToCartBtn} onClick={handleAddToCart}>
+        <button className={styles.addToCartBtn} onClick={() => addToCart(product, Number(quantity))}>
           Add to Cart
         </button>
       </div>
