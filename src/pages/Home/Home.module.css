@@ -43,9 +43,14 @@
   padding: 0 4rem;
 }
 
+.linkContainer {
+  margin-top: 0.4rem;
+}
+
 .linkDescription {
   text-align: center;
   margin: 0.4rem 0;
+  font-weight: 600;
 }
 
 .outerLink {
@@ -58,7 +63,7 @@
 }
 
 /* Small Smartphones */
-@media (max-width: 22em) {
+@media (max-width: 24em) {
   .heroTitle {
     font-size: 2rem;
   }
@@ -67,6 +72,6 @@
   }
 
   .heroImage {
-    padding: 0 6rem;
+    padding: 0 5.6rem;
   }
 }

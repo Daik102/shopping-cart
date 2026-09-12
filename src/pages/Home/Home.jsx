@@ -10,7 +10,7 @@ function Home() {
         Shop Now
       </Link>
       <img className={styles.heroImage} src="https://picsum.photos/600/600" alt="Featured products banner" />
-      <div>
+      <div className={styles.linkContainer}>
         <p className={styles.linkDescription}>
           Hero images are from <a className={styles.outerLink} href="https://picsum.photos/" target="_blank" rel="noreferrer">Lorem Picsum</a>.
         </p>
