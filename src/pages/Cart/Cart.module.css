@@ -3,13 +3,13 @@
   flex-direction: column;
   align-items: center;
   gap: 1.2rem;
-  min-height: calc(100vh - var(--navbar-height, 4rem));
-  padding: 1.6rem 0;
+  min-height: 100vh;
+  padding: 5.6rem 0 1.6rem;
   background-color: var(--color-item-background);
 }
 
 .cartTitle {
-  font-size: clamp(1.4rem, 3.25vw, 1.8rem);
+  font-size: clamp(1.6rem, 3.5vw, 1.7rem);
 }
 
 .backToShoppingBtn {
@@ -111,7 +111,7 @@
 }
 
 .summaryTitle {
-  font-size: clamp(1.4rem, 3vw, 1.6rem);
+  font-size: 1.5rem;
 }
 
 .totalAmount {
@@ -145,8 +145,10 @@
   }
 
   .summaryContainer {
-    max-width: 16rem;
+    position: sticky;
+    top: calc(var(--navbar-height, 4rem) + 1.6rem);
     align-self: flex-start;
+    max-width: 16rem;
   }
 }
 
@@ -159,11 +161,10 @@
 
   .cartItemGrid {
     grid-column: 2;
-    max-width: 48rem;
+    max-width: 35rem;
   }
 
   .summaryContainer {
-    grid-column: 3;
-    max-width: 32rem;
+    max-width: 17.5rem;
   }
 }
