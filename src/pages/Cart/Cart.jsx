@@ -1,8 +1,9 @@
-import { useOutletContext, Link } from 'react-router';
+import { useOutletContext, Link, useNavigate } from 'react-router';
 import styles from './Cart.module.css';
 
 function Cart() {
   const { cart, updateQuantity, removeFromCart } = useOutletContext();
+  const navigate = useNavigate();
 
   if (cart.length === 0) {
     return (
@@ -23,6 +24,10 @@ function Cart() {
   }, 0);
 
   const totalPrice = (totalCents / 100).toFixed(2);
+
+  const handleCheckout = () => {
+    navigate('/checkout');
+  };
 
   return (
     <div className={styles.wrapper}>
@@ -63,7 +68,7 @@ function Cart() {
           <p className={styles.totalAmount}>
             Total ({totalItemCount} {totalItemCount > 1 ? 'items' : 'item'}): ${totalPrice}
           </p>
-          <button className={styles.checkoutBtn}>Proceed to Checkout</button>
+          <button className={styles.checkoutBtn} onClick={handleCheckout}>Proceed to Checkout</button>
         </div>
       </div>
     </div>

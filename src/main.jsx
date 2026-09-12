@@ -6,6 +6,7 @@ import Layout from './Layout.jsx';
 import Home from "./pages/Home/Home.jsx";
 import Shop from "./pages/Shop/Shop.jsx";
 import Cart from "./pages/Cart/Cart.jsx";
+import { Checkout } from './pages/Checkout/Checkout.jsx';
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: 'shop', element: <Shop /> },
       { path: 'cart', element: <Cart /> },
+      { path: 'checkout', element: <Checkout />}
     ],
   },
 ]);

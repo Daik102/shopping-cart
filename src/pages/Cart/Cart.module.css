@@ -122,6 +122,10 @@
   composes: addToCartBtn from "../../components/ProductCard/ProductCard.module.css";
 }
 
+.backToTheCartBtn {
+  composes: backToShoppingBtn;
+}
+
 /* Small Smartphones */
 @media (max-width: 22em) {
   .cartItemImage {
