@@ -4,8 +4,9 @@ import Navbar from './components/Navbar/Navbar'
 
 function App() {
   const [cart, setCart] = useState([]);
-  
 
+  const cartCount = cart.reduce((total, item) => total += item.quantity, 0);
+  
   const addToCart = ((product, quantity) => {
     const duplication = cart.find((item) => item.id === product.id);
     
@@ -43,7 +44,7 @@ function App() {
 
   return (
     <div>
-      <Navbar cart={cart} />
+      <Navbar cartCount={cartCount} />
       <main>
         <Outlet context={{ cart, addToCart, updateQuantity, removeFromCart }} />
       </main>
