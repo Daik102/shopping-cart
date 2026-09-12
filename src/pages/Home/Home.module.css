@@ -40,7 +40,21 @@
   width: 100%;
   max-width: 37.5rem;
   height: auto;
-  padding: 0 2rem;
+  padding: 0 4rem;
+}
+
+.linkDescription {
+  text-align: center;
+  margin: 0.4rem 0;
+}
+
+.outerLink {
+  color: var(--color-text);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 /* Small Smartphones */
@@ -50,5 +64,9 @@
   }
   .heroSubTitle {
     font-size: 1.1rem;
+  }
+
+  .heroImage {
+    padding: 0 6rem;
   }
 }

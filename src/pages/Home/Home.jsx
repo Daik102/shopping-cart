@@ -10,6 +10,17 @@ function Home() {
         Shop Now
       </Link>
       <img className={styles.heroImage} src="https://picsum.photos/600/600" alt="Featured products banner" />
+      <div>
+        <p className={styles.linkDescription}>
+          Hero images are from <a className={styles.outerLink} href="https://picsum.photos/" target="_blank" rel="noreferrer">Lorem Picsum</a>.
+        </p>
+        <p className={styles.linkDescription}>
+          Product data is from <a className={styles.outerLink} href="https://fakestoreapi.com/" target="_blank" rel="noreferrer">Fake Store API</a>.
+        </p>
+        <p className={styles.linkDescription}>
+          <a className={styles.outerLink} href="https://daik102.github.io/homepage/" target="_blank" rel="noreferrer">2026 Daik</a>
+        </p>
+      </div>
     </div>
   );
 }
