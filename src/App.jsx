@@ -2,8 +2,9 @@ import { useState } from 'react'
 import { Outlet } from 'react-router';
 import Navbar from './components/Navbar/Navbar'
 
-function Layout() {
+function App() {
   const [cart, setCart] = useState([]);
+  
 
   const addToCart = ((product, quantity) => {
     const duplication = cart.find((item) => item.id === product.id);
@@ -50,4 +51,4 @@ function Layout() {
   )
 }
 
-export default Layout
+export default App
