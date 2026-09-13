@@ -8,12 +8,40 @@
   background-color: var(--color-item-background);
 }
 
-.cartTitle {
-  font-size: clamp(1.6rem, 3.5vw, 1.7rem);
+.emptyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  margin: auto;
+  max-width: 32rem;
+  padding: 1.5rem;
 }
 
-.backToShoppingBtn {
-  composes: shopBtn from "../Home/Home.module.css";
+.emptyIcon {
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.emptyTitle {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+}
+
+.emptyText {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.startShoppingBtn {
+ composes: startShoppingBtn from "../Home/Home.module.css";
+}
+
+.cartTitle {
+  font-size: clamp(1.6rem, 3.5vw, 1.7rem);
 }
 
 .cartContainer {
@@ -123,7 +151,7 @@
 }
 
 .backToTheCartBtn {
-  composes: backToShoppingBtn;
+  composes: startShoppingBtn;
 }
 
 /* Small Smartphones */

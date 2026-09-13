@@ -1,4 +1,5 @@
 import { useOutletContext, Link, useNavigate } from 'react-router';
+import { ShoppingBag } from 'lucide-react';
 import styles from './Cart.module.css';
 
 function Cart() {
@@ -8,10 +9,16 @@ function Cart() {
   if (cart.length === 0) {
     return (
       <div className={styles.wrapper}>
-        <h1 className={styles.cartTitle}>Your cart is empty</h1>
-        <Link to="/shop" className={styles.backToShoppingBtn}>
-          Back to shopping
-        </Link>
+        <div className={styles.emptyContainer}>
+          <ShoppingBag size={64} className={styles.emptyIcon} />
+          <h2 className={styles.emptyTitle}>Your cart is empty</h2>
+          <p className={styles.emptyText}>
+            Looks like you haven&apos;t added anything to your cart yet. Let&apos;s find something you love!
+          </p>
+          <Link to="/shop" className={styles.startShoppingBtn}>
+            Start Shopping
+          </Link>
+        </div>
       </div>
     );
   }
