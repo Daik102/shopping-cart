@@ -150,6 +150,22 @@
   composes: addToCartBtn from "../../components/ProductCard/ProductCard.module.css";
 }
 
+.checkoutContainer {
+  composes: emptyContainer;
+}
+
+.checkoutIcon {
+  composes: emptyIcon;
+}
+
+.checkoutTitle {
+  composes: emptyTitle
+}
+
+.checkoutText {
+  composes: emptyText;
+}
+
 .backToTheCartBtn {
   composes: startShoppingBtn;
 }
