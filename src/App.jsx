@@ -1,9 +1,16 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Outlet } from 'react-router';
 import Navbar from './components/Navbar/Navbar'
 
 function App() {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(() => {
+    const savedCart = localStorage.getItem('cart-items');
+    return savedCart ? JSON.parse(savedCart) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem('cart-items', JSON.stringify(cart));
+  }, [cart]);
 
   const cartCount = cart.reduce((total, item) => total += item.quantity, 0);
   
