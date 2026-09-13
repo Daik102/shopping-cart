@@ -11,7 +11,7 @@ function Navbar({ cartCount }) {
         className={({ isActive }) => (isActive ? styles.customActive : styles.navItem)}
       >
         <span className={styles.cartLinkContent}>
-          <House className={styles.cartIcon} size={20} />
+          <House className={styles.cartIcon} size={20} aria-hidden="true" />
           Home
         </span>
       </NavLink>
@@ -20,7 +20,7 @@ function Navbar({ cartCount }) {
         className={({ isActive }) => (isActive ? styles.customActive : styles.navItem)}
       >
         <span className={styles.cartLinkContent}>
-          <Store className={styles.cartIcon} size={20} />
+          <Store className={styles.cartIcon} size={20} aria-hidden="true" />
           Shop
         </span>
       </NavLink>
@@ -29,7 +29,7 @@ function Navbar({ cartCount }) {
         className={({ isActive }) => (isActive ? styles.customActive : styles.navItem)}
       >
         <span className={styles.cartLinkContent}>
-          <ShoppingCart className={styles.cartIcon} size={20} />
+          <ShoppingCart className={styles.cartIcon} size={20} aria-hidden="true" />
           Cart
           {cartCount > 0 && <span className={styles.badge}>({cartCount})</span>}
         </span>

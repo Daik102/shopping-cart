@@ -10,10 +10,10 @@ function Cart() {
     return (
       <div className={styles.wrapper}>
         <div className={styles.emptyContainer}>
-          <ShoppingBag size={64} className={styles.emptyIcon} />
+          <ShoppingBag size={64} className={styles.emptyIcon} aria-hidden="true" />
           <h2 className={styles.emptyTitle}>Your cart is empty</h2>
           <p className={styles.emptyText}>
-            Looks like you haven&apos;t added anything to your cart yet. Let&apos;s find something you love!
+            Looks like you haven't added anything to your cart yet. Let's find something you love!
           </p>
           <Link to="/shop" className={styles.startShoppingBtn}>
             Start Shopping
