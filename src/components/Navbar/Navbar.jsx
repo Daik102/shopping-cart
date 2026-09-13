@@ -31,7 +31,7 @@ function Navbar({ cartCount }) {
         <span className={styles.cartLinkContent}>
           <ShoppingCart className={styles.cartIcon} size={20} aria-hidden="true" />
           Cart
-          {cartCount > 0 && <span className={styles.badge}>({cartCount})</span>}
+          <span className={styles.badge}>({cartCount})</span>
         </span>
       </NavLink>
     </nav>
