@@ -3,25 +3,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.2rem;
+  gap: 1.25rem;
   height: 100vh;
   padding: 6rem 0 2rem;
 }
 
 .heroTitle {
   text-align: center;
-  font-size: clamp(2.4rem, 6vw, 3.2rem);
+  font-size: clamp(2.75rem, 6vw, 3rem);
   font-family: var(--font-heading);
 }
 
 .heroSubTitle {
   text-align: center;
-  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  font-size: clamp(1.5rem, 3vw, 1.75rem);
   font-family: var(--font-heading);
 }
 
 .startShoppingBtn {
-  margin: 0.8rem 0;
+  margin: 0.75rem 0;
   padding: 0.6rem 1.2rem;
   font-size: 1.2rem;
   font-weight: 600;
@@ -44,12 +44,12 @@
 }
 
 .linkContainer {
-  margin-top: 0.4rem;
+  margin-top: 0.25rem;
 }
 
 .linkDescription {
   text-align: center;
-  margin: 0.4rem 0;
+  margin: 0.5rem 0;
   font-weight: 600;
 }
 
@@ -65,13 +65,13 @@
 /* Small Smartphones */
 @media (max-width: 24em) {
   .heroTitle {
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
   .heroSubTitle {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
   }
 
   .heroImage {
-    padding: 0 5.6rem;
+    padding: 0 5.5rem;
   }
 }
