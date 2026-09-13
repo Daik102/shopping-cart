@@ -5,6 +5,7 @@ import styles from "./Navbar.module.css";
 function Navbar({ cartCount }) {
   return (
     <nav>
+      <h1 className={styles.navbarTitle}>Odin Shopping Cart</h1>
       <NavLink 
         to="/" end
         className={({ isActive }) => (isActive ? styles.customActive : styles.navItem)}
