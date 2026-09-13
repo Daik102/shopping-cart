@@ -6,8 +6,8 @@ function Home() {
     <div className={styles.wrapper}>
       <h1 className={styles.heroTitle}>Odin Shopping Cart</h1>
       <p className={styles.heroSubTitle}>Discover Quality Products</p>
-      <Link to="/shop" className={styles.shopBtn} >
-        Shop Now
+      <Link to="/shop" className={styles.startShoppingBtn} >
+        Start Shopping
       </Link>
       <img className={styles.heroImage} src="https://picsum.photos/600/600" alt="Featured products banner" />
       <div className={styles.linkContainer}>
