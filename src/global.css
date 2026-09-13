@@ -1,11 +1,11 @@
 @font-face {
   font-family: Roboto;
-  src: url(./assets/Roboto-VariableFont_wdth\,wght.woff2) format('woff2');
+  src: url(./assets/fonts/Roboto-VariableFont_wdth\,wght.woff2) format('woff2');
 }
 
 @font-face {
   font-family: Damion-Regular;
-  src: url(./assets/Damion-Regular.woff2) format('woff2');
+  src: url(./assets/fonts/Damion-Regular.woff2) format('woff2');
 }
 
 :root {
