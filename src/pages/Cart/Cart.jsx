@@ -2,7 +2,7 @@ import { useOutletContext, Link, useNavigate } from 'react-router';
 import { ShoppingBag } from 'lucide-react';
 import styles from './Cart.module.css';
 
-function Cart() {
+export function Cart() {
   const { cart, updateQuantity, removeFromCart } = useOutletContext();
   const navigate = useNavigate();
 
@@ -81,5 +81,3 @@ function Cart() {
     </div>
   );
 }
-
-export default Cart

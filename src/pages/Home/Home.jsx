@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import styles from './Home.module.css';
 
-function Home() {
+export function Home() {
   return (
     <div className={styles.wrapper}>
       <h1 className={styles.heroTitle}>Odin Shopping Cart</h1>
@@ -24,5 +24,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home

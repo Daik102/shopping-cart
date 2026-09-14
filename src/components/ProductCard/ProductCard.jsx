@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './ProductCard.module.css';
 
-function ProductCard({ product, addToCart }) {
+export function ProductCard({ product, addToCart }) {
   const [quantity, setQuantity] = useState(1);
 
   return (
@@ -32,5 +32,3 @@ function ProductCard({ product, addToCart }) {
     </li>
   );
 }
-
-export default ProductCard

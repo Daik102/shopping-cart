@@ -2,7 +2,7 @@ import { NavLink } from "react-router";
 import { Sparkle, House, Store, ShoppingCart } from 'lucide-react';
 import styles from "./Navbar.module.css";
 
-function Navbar({ cartCount }) {
+export function Navbar({ cartCount }) {
   return (
     <nav>
       <h1 className={styles.navbarTitle}>
@@ -40,5 +40,3 @@ function Navbar({ cartCount }) {
     </nav>
   );
 }
-
-export default Navbar

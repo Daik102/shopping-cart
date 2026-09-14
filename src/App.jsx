@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import { Outlet } from 'react-router';
-import Navbar from './components/Navbar/Navbar'
+import { Navbar } from './components/Navbar/Navbar'
 
-function App() {
+export function App() {
   const [cart, setCart] = useState(() => {
     const savedCart = localStorage.getItem('cart-items');
     return savedCart ? JSON.parse(savedCart) : [];
@@ -58,5 +58,3 @@ function App() {
     </div>
   )
 }
-
-export default App
