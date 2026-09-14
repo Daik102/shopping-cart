@@ -15,8 +15,8 @@
   justify-content: center;
   text-align: center;
   gap: 1rem;
-  margin: auto;
   max-width: 32rem;
+  margin: auto;
   padding: 1.5rem;
 }
 
@@ -143,30 +143,6 @@
 
 .totalAmount {
   font-weight: 600;
-}
-
-.checkoutBtn {
-  composes: addToCartBtn from "../../components/ProductCard/ProductCard.module.css";
-}
-
-.checkoutContainer {
-  composes: emptyContainer;
-}
-
-.checkoutIcon {
-  composes: emptyIcon;
-}
-
-.checkoutTitle {
-  composes: emptyTitle
-}
-
-.checkoutText {
-  composes: emptyText;
-}
-
-.backToTheCartBtn {
-  composes: startShoppingBtn;
 }
 
 /* Small Smartphones */
