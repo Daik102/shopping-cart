@@ -1,7 +1,9 @@
+.wrapper {
+  composes: wrapper from '../../pages/Cart/Cart.module.css';
+}
+
 .container {
   composes: emptyContainer from '../../pages/Cart/Cart.module.css';
-  justify-content: center;
-  min-height: 100vh;
 }
 
 .icon {
