@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
 import { useOutletContext } from 'react-router';
 import styles from './Shop.module.css';
-import ProductCard from '../../components/ProductCard/ProductCard';
+import { ProductCard } from '../../components/ProductCard/ProductCard';
+import { ErrorView } from '../../components/ErrorView/ErrorView';
 
-function Shop() {
+export function Shop() {
   const { addToCart } = useOutletContext();
   const [products, setProducts] = useState([]);
   const [error, setError] = useState(null);
@@ -61,12 +62,10 @@ function Shop() {
 
   if (error) {
     return (
-      <div className={styles.wrapper}>
-        <div className={styles.statusContainer}>
-          <p className={styles.errorText}>Error: {error}</p>
-          <button className={styles.tryAgainBtn} onClick={() => window.location.reload()}>Try Again</button>
-        </div>
-      </div>
+      <ErrorView 
+        title="Failed to Load Products" 
+        message={error} 
+      />
     );
   }
 
@@ -84,5 +83,3 @@ function Shop() {
     </div>
   );
 }
-
-export default Shop

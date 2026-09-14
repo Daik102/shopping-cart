@@ -1,0 +1,21 @@
+.container {
+  composes: emptyContainer from '../../pages/Cart/Cart.module.css';
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.icon {
+  composes: emptyIcon from '../../pages/Cart/Cart.module.css';
+}
+
+.title {
+  composes: emptyTitle from '../../pages/Cart/Cart.module.css';
+}
+
+.text {
+  composes: emptyText from '../../pages/Cart/Cart.module.css';
+}
+
+.actionBtn {
+  composes: startShoppingBtn from '../../pages/Home/Home.module.css';
+}
