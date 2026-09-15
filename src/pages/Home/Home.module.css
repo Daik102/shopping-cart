@@ -15,9 +15,8 @@
 }
 
 .heroSubTitle {
-  text-align: center;
-  font-size: clamp(1.5rem, 3vw, 1.75rem);
-  font-family: var(--font-heading);
+  composes: heroTitle;
+  font-size: clamp(1.5rem, 3vw, 1.7rem);
 }
 
 .startShoppingBtn {
@@ -25,9 +24,9 @@
   padding: 0.6rem 1.2rem;
   font-size: 1.2rem;
   font-weight: 600;
+  text-decoration: none;
   color: var(--color-white-text);
   background-color: var(--color-accent);
-  text-decoration: none;
   border-radius: 0.4rem;
 
   &:hover {
@@ -54,8 +53,8 @@
 }
 
 .outerLink {
-  color: var(--color-text);
   text-decoration: none;
+  color: var(--color-text);
 
   &:hover {
     text-decoration: underline;

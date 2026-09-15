@@ -145,6 +145,10 @@
   font-weight: 600;
 }
 
+.checkoutBtn {
+  composes: addToCartBtn from "../../components/ProductCard/ProductCard.module.css";
+}
+
 /* Small Smartphones */
 @media (max-width: 22em) {
   .cartItemImage {

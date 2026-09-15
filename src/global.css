@@ -40,8 +40,8 @@
 
 body {
   font-family: var(--font-body);
-  background-color: var(--color-background);
   color: var(--color-text);
+  background-color: var(--color-background);
 }
 
 button {
