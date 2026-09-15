@@ -34,7 +34,7 @@ export function useFetch(url) {
     fetchData();
     
     return () => controller.abort();
-  }, []);
+  }, [url]);
 
   return { data, loading, error };
 }
