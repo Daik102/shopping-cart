@@ -4,7 +4,7 @@ import styles from "./Navbar.module.css";
 
 export function Navbar({ cartCount }) {
   return (
-    <nav>
+    <nav className={styles.navbar}>
       <h1 className={styles.navbarTitle}>
         <Sparkle className={styles.titleIcon} size={20} aria-hidden="true" />
         Odin Shopping Cart
