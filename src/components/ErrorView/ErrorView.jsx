@@ -2,7 +2,7 @@ import { Link } from 'react-router';
 import { AlertTriangle } from 'lucide-react';
 import styles from './ErrorView.module.css';
 
-export function ErrorView({ title, message }) {
+export function ErrorView({ title = 'Something Went Wrong', message = 'An unexpected error occurred. Please try again.' }) {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
