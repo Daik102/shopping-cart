@@ -23,7 +23,7 @@ export function Cart() {
     );
   }
 
-  const totalItemCount = cart.reduce((total, item) => total += item.quantity, 0);
+  const totalItemCount = cart.reduce((total, item) => total + item.quantity, 0);
 
   const totalCents = cart.reduce((total, item) => {
     const priceInCents = Math.round(item.price * 100);

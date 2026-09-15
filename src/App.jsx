@@ -12,7 +12,7 @@ export function App() {
     localStorage.setItem('cart-items', JSON.stringify(cart));
   }, [cart]);
 
-  const cartCount = cart.reduce((total, item) => total += item.quantity, 0);
+  const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
   
   const addToCart = ((product, quantity) => {
     const duplication = cart.find((item) => item.id === product.id);
