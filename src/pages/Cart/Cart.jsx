@@ -32,10 +32,6 @@ export function Cart() {
 
   const totalPrice = (totalCents / 100).toFixed(2);
 
-  const handleCheckout = () => {
-    navigate('/checkout');
-  };
-
   return (
     <div className={styles.wrapper}>
       <h1 className={styles.cartTitle}>Shopping Cart</h1>
@@ -75,7 +71,7 @@ export function Cart() {
           <p className={styles.totalAmount}>
             Total ({totalItemCount} {totalItemCount > 1 ? 'items' : 'item'}): ${totalPrice}
           </p>
-          <button className={styles.checkoutBtn} onClick={handleCheckout}>Proceed to Checkout</button>
+          <button className={styles.checkoutBtn} onClick={() => navigate('/checkout')}>Proceed to Checkout</button>
         </div>
       </div>
     </div>
