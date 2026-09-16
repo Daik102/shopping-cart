@@ -4,7 +4,7 @@
   align-items: center;
   gap: 1.25rem;
   min-height: 100vh;
-  padding: 5.5rem 0 1.5rem;
+  padding: 5.25rem 0 1.25rem;
   background-color: var(--color-item-background);
 }
 
@@ -72,7 +72,7 @@
 
 .cartItemImage {
   width: 100%;
-  max-width: 8rem;
+  max-width: 7.5rem;
   aspect-ratio: 1 / 1;
   object-fit: contain;
 }
@@ -152,7 +152,7 @@
 /* Small Smartphones */
 @media (max-width: 22em) {
   .cartItemImage {
-    max-width: 5.5rem;
+    max-width: 5rem;
   }
 }
 
@@ -160,7 +160,7 @@
 @media screen and (min-width: 48em) {
   .cartContainer {
     flex-direction: row;
-    padding: 0 1.5rem;
+    padding: 0 1.25rem;
   }
 
   .cartItemImage {
@@ -169,7 +169,7 @@
 
   .summaryContainer {
     position: sticky;
-    top: calc(var(--navbar-height, 4rem) + 1.5rem);
+    top: calc(var(--navbar-height, 4rem) + 1.75rem);
     align-self: flex-start;
     max-width: 16.75rem;
   }
