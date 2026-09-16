@@ -1,6 +1,7 @@
 <h1>Odin Shopping Cart</h1>
 
-A responsive React e-commerce web application featuring API-driven product listings, live cart updates, client-side routing, and a comprehensive automated test suite.
+A responsive React e-commerce web application featuring API-driven product listings, live cart updates, client-side routing, and a comprehensive automated test suite.<br>
+This project is based on <a href="https://www.theodinproject.com/" target="_blank" rel="noreferrer">The Odin Project</a>.
 
 <h3>Features</h3>
 
