@@ -6,7 +6,7 @@ export function ProductCard({ product, addToCart }) {
 
   return (
     <li className={styles.product}>
-      <img className={styles.productImage} src={product.image} alt={product.title} />
+      <img className={styles.productImage} src={product.thumbnail} alt={product.title} />
       <p className={styles.productTitle}>{product.title}</p>
       <p className={styles.productPrice}>${product.price}</p>
       <div className={styles.actionsContainer}>

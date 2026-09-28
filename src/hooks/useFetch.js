@@ -21,7 +21,7 @@ export function useFetch(url) {
         }
         
         const json = await response.json();
-        setData(json);
+        setData(json.products);
       } catch (err) {
         if (err.name !== 'AbortError') {
           setError(err.message);

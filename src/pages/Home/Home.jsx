@@ -15,7 +15,7 @@ export function Home() {
           Hero images are from <a className={styles.outerLink} href="https://picsum.photos/" target="_blank" rel="noreferrer">Lorem Picsum</a>.
         </p>
         <p className={styles.linkDescription}>
-          Product data is from <a className={styles.outerLink} href="https://fakestoreapi.com/" target="_blank" rel="noreferrer">FakeStoreAPI</a>.
+          Product data is from <a className={styles.outerLink} href="https://dummyjson.com/" target="_blank" rel="noreferrer">DummyJSON</a>.
         </p>
         <p className={styles.linkDescription}>
           <a className={styles.outerLink} href="https://daik102.github.io/homepage/" target="_blank" rel="noreferrer">2026 Daik</a>

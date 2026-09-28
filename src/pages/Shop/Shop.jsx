@@ -6,10 +6,10 @@ import styles from './Shop.module.css';
 
 export function Shop() {
   const { addToCart } = useOutletContext();
-  const { data: products, loading, error } = useFetch('https://fakestoreapi.com/products');
+  const { data: products, loading, error } = useFetch('https://dummyjson.com/products');
 
   const formattedProducts = Array.isArray(products) 
-  ? products.map(({ id, title, price, image }) => ({ id, title, price, image }))
+  ? products.map(({ id, title, price, thumbnail }) => ({ id, title, price, thumbnail }))
   : [];
 
   if (loading) {

@@ -29,7 +29,7 @@ export function App() {
           title: product.title,
           price: product.price,
           quantity,
-          image: product.image,
+          thumbnail: product.thumbnail,
         },
       ]);
     }

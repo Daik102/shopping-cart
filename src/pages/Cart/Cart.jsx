@@ -39,7 +39,7 @@ export function Cart() {
         <ul className={styles.cartItemGrid}>
           {cart.map((cartItem) => (
             <li key={cartItem.id} className={styles.cartItem}>
-              <img className={styles.cartItemImage} src={cartItem.image} alt={cartItem.title} />
+              <img className={styles.cartItemImage} src={cartItem.thumbnail} alt={cartItem.title} />
               <div className={styles.descriptionContainer}>
                 <div>
                   <p className={styles.cartItemTitle}>{cartItem.title}</p>

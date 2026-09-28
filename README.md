@@ -5,7 +5,7 @@ This project is based on <a href="https://www.theodinproject.com/" target="_blan
 
 <h3>Features</h3>
 
-- Product Showcase: Dynamically fetches product data from FakeStoreAPI.
+- Product Showcase: Dynamically fetches product data from DummyJSON.
 
 - Shopping Cart Management: Real-time item count calculations, interactive quantity adjustments, and removal logic.
 
