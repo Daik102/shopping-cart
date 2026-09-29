@@ -15,7 +15,7 @@ export function Shop() {
   if (loading) {
     return (
       <div className={styles.wrapper}>
-        <p className={styles.loadingText}>Loading products...</p>
+        <div className={styles.loadingSpinner}></div>
       </div>
     );
   }
