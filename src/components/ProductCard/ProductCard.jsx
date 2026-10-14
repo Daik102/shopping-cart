@@ -25,7 +25,10 @@ export function ProductCard({ product, addToCart }) {
             ))}
           </select>
         </div>
-        <button className={styles.addToCartBtn} onClick={() => addToCart(product, Number(quantity))}>
+        <button 
+          className={styles.addToCartBtn} 
+          onClick={() => addToCart(product, Number(quantity))}
+        >
           Add to Cart
         </button>
       </div>
