@@ -7,9 +7,9 @@ export function Checkout() {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <Construction size={64} className={styles.icon} />
-        <h2 className={styles.title}>Sorry, this is a practice site</h2>
+        <h2 className={styles.title}>This is a practice site</h2>
         <p className={styles.text}>
-          Checkout feature might be added in the future. Stay tuned.
+          Checkout feature might be added in the future implementation. Stay tuned.
         </p>
         <Link to="/cart" className={styles.actionBtn}>
           Back to Cart
