@@ -6,9 +6,9 @@ export function Navbar({ cartCount }) {
   return (
     <header className={styles.header}>
       <h1 className={styles.navbarTitle}>
-          <Sparkle className={styles.titleIcon} size={20} aria-hidden="true" />
-          Odin Shopping Cart
-        </h1>
+        <Sparkle className={styles.titleIcon} size={20} aria-hidden="true" />
+        Odin Shopping Cart
+      </h1>
       <nav className={styles.navbar}>
         <NavLink 
           to="/" end
